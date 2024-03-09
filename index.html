@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container h1{
+        text-align: center;
+        background-color: aquamarine;
+    }
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h1 >JavaScript</h1>
+   
+</div>
+
+<script>
+var heading = document.createElement("h2")
+heading.textContent = " Result :"
+document.body.appendChild(heading)
+
+var a = 10
+document.write("The Value Of the a is " + a)
+document.write('<br>......................................<br><br>')
+
+document.write("The Value Of the ++a is " + ++a)
+document.write("<br> Now the Value of  ++a is " + a + "<br><br>")
+
+document.write("The Value Of the a++ is " + a++)
+document.write("<br> Now the Value of  a++ is " + a + "<br><br>")
+
+document.write("The Value Of the ++a is " + --a)
+document.write("<br> Now the Value of  ++a is " + a + "<br><br>")
+
+document.write("The Value Of the ++a is " + a--)
+document.write("<br> Now the Value of  ++a is " + a + "<br><br>")
+
+var a = 2, b = 1;
+//            1   - 0  +  1  +  1
+var result = --a - --b + ++b + b--;
+
+document.write('the value of a is '+ a + '<br>')//1
+document.write('the value of b is ' + b + '<br>')//0
+document.write('the value of result is ' + result + '<br><br><br><br>')//3
+
+var name = prompt("Enter your Name")
+alert("Assalam-u-alaikum " + name + ' How are you ' )
+ 
+// RESULT 
+
+ var Subjects1 = prompt("Name of the subject 1")
+  var num1 = prompt("Number obtained in subject 1")
+
+ var Subjects2 = prompt("Name of the subject 2")
+  var num2 = prompt("Number obtained in subject 2")
+
+ var Subjects3 = prompt("Name of the  subject 3")
+  var num3 = prompt("Number obtained in subject 3")
+
+ var total = 100 
+var percentageOfSubject1 =num1*100 / total
+var percentageOfSubject2 =num2*100 / total
+var percentageOfSubject3 =num3*100 / total
+
+document.write(Subjects1 +  "   "+total + "     " + num1+ "   "+ percentageOfSubject1+"%<br>" )
+document.write(Subjects2 +  "   "+total + "     " + num2+ "   "+ percentageOfSubject2+"%<br>")
+document.write(Subjects3 +  "   "+total +"     " + num3+ "   "+ percentageOfSubject3+"%<br>")
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
